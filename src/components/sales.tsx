@@ -11,7 +11,7 @@ export default function Sales() {
       name: "HAVIT HV-G92 Gamepad",
       discountedPrice: "$120",
       withoutDiscount: "$160",
-      stars: [<FaStar />, <FaStar />, <FaStar />, <FaStar />, <FaStar />],
+      stars: [<FaStar key="star1" />, <FaStar key="star2" />, <FaStar key="star3" />, <FaStar key="star4" />, <FaStar key="star5" />],
       rating: "(88)",
     },
     {
@@ -20,7 +20,7 @@ export default function Sales() {
       name: "AK-900 Wired Keyboard",
       discountedPrice: "$960",
       withoutDiscount: "$1160",
-      stars: [<FaStar />, <FaStar />, <FaStar />, <FaStar />, <FaStar />],
+      stars: [<FaStar key="star1" />, <FaStar key="star2" />, <FaStar key="star3" />, <FaStar key="star4" />, <FaStar key="star5" />],
       rating: "(75)",
     },
     {
@@ -29,7 +29,7 @@ export default function Sales() {
       name: "IPS LCD Gaming Monitor",
       discountedPrice: "$370",
       withoutDiscount: "$400",
-      stars: [<FaStar />, <FaStar />, <FaStar />, <FaStar />, <FaStar />],
+      stars: [<FaStar key="star1" />, <FaStar key="star2" />, <FaStar key="star3" />, <FaStar key="star4" />, <FaStar key="star5" />],
       rating: "(99)",
     },
     {
@@ -39,11 +39,11 @@ export default function Sales() {
       discountedPrice: "$375",
       withoutDiscount: "$400",
       stars: [
-        <FaStar />,
-        <FaStar />,
-        <FaStar />,
-        <FaStar />,
-        <FaStarHalfAlt />,
+        <FaStar key="star1" />,
+        <FaStar key="star2" />,
+        <FaStar key="star3" />,
+        <FaStar key="star4" />,
+        <FaStarHalfAlt key="star5" />,
       ],
       rating: "(99)",
     },
