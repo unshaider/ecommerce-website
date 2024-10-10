@@ -2,16 +2,12 @@ import ProductCard from "./product-card";
 import { Product } from "../types/interface";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
-import joystick from "../../public/joystick.png";
-import keyboard from "../../public/keyboard.png";
-import lcd from "../../public/lcd.png";
-import chair from "../../public/chair.png";
 
 export default function Sales() {
   const products: Product[] = [
     {
       discount: "-40%",
-      image: joystick,
+      image: "/joystick.png",
       name: "HAVIT HV-G92 Gamepad",
       discountedPrice: "$120",
       withoutDiscount: "$160",
@@ -20,7 +16,7 @@ export default function Sales() {
     },
     {
       discount: "-35%",
-      image: keyboard,
+      image: "/keyboard.png",
       name: "AK-900 Wired Keyboard",
       discountedPrice: "$960",
       withoutDiscount: "$1160",
@@ -29,7 +25,7 @@ export default function Sales() {
     },
     {
       discount: "-30%",
-      image: lcd,
+      image: "/lcd.png",
       name: "IPS LCD Gaming Monitor",
       discountedPrice: "$370",
       withoutDiscount: "$400",
@@ -38,7 +34,7 @@ export default function Sales() {
     },
     {
       discount: "-25%",
-      image: chair,
+      image: "/chair.png",
       name: "S-Series Comfort Chair",
       discountedPrice: "$375",
       withoutDiscount: "$400",
@@ -94,8 +90,8 @@ export default function Sales() {
       </div>
 
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-7">
-        {products.map((product) => (
-          <ProductCard key={product.name} product={product} />
+        {products.map((product, index) => (
+          <ProductCard key={index} product={product} />
         ))}
       </div>
     </section>

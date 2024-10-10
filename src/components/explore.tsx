@@ -1,13 +1,5 @@
 import { Product } from "@/types/interface";
 import ProductCard from "./product-card";
-import dogfood from "../../public/dog-food.png";
-import camera from "../../public/camera.png";
-import laptop from "../../public/laptop.png";
-import facewash from "../../public/facewash.png";
-import car from "../../public/car.png"
-import shoes from "../../public/shoes.png"
-import game from "../../public/game.png"
-import upper from "../../public/upper.png"
 import { FaStar } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
 import Button from "./button";
@@ -16,7 +8,7 @@ export default function Explore() {
   const products: Product[] = [
     {
       discount: "30%",
-      image: dogfood,
+      image: "/dog-food.png",
       name: "Breed Dry Dog Food",
       discountedPrice: "$100",
       withoutDiscount: "$120",
@@ -25,7 +17,7 @@ export default function Explore() {
     },
     {
       discount: "30%",
-      image: camera,
+      image: "/camera.png",
       name: "CANON EOS DSLR Camera",
       discountedPrice: "$360",
       withoutDiscount: "$400",
@@ -40,7 +32,7 @@ export default function Explore() {
     },
     {
       discount: "30%",
-      image: laptop,
+      image: "/laptop.png",
       name: "ASUS FHD Gaming Laptop",
       discountedPrice: "$700",
       withoutDiscount: "$1000",
@@ -55,7 +47,7 @@ export default function Explore() {
     },
     {
       discount: "30%",
-      image: facewash,
+      image: "/facewash.png",
       name: "Curology Product Set",
       discountedPrice: "$500",
       withoutDiscount: "$550",
@@ -64,7 +56,7 @@ export default function Explore() {
     },
     {
         discount: "30%",
-        image: car,
+        image: "/car.png",
         name: "Kids Electric Car",
         discountedPrice: "$960",
         withoutDiscount: "$1100",
@@ -73,7 +65,7 @@ export default function Explore() {
       },
       {
         discount: "30%",
-        image: shoes,
+        image: "/shoes.png",
         name: "Jr. Zoom Soccer Cleats",
         discountedPrice: "$1160",
         withoutDiscount: "$1200",
@@ -82,7 +74,7 @@ export default function Explore() {
       },
       {
         discount: "30%",
-        image: game,
+        image: "/game.png",
         name: "GP11 Shooter USB Gamepad",
         discountedPrice: "$660",
         withoutDiscount: "$700",
@@ -91,7 +83,7 @@ export default function Explore() {
       },
       {
         discount: "30%",
-        image: upper,
+        image: "/upper.png",
         name: "Quilted Satin Jacket",
         discountedPrice: "$660",
         withoutDiscount: "$700",
@@ -111,8 +103,8 @@ export default function Explore() {
       </h2>
 
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-7 mx-20">
-        {products.map((product) => (
-          <ProductCard key={product.name} product={product} />
+        {products.map((product, index) => (
+          <ProductCard key={index} product={product} />
         ))}
       </div>
 

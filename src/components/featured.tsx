@@ -1,9 +1,3 @@
-import Image from "next/image";
-import playstation from "../../public/playstation.png";
-import women from "../../public/women.png";
-import speakers from "../../public/speakers.png";
-import perfume from "../../public/perfume.png";
-
 export default function Featured() {
   return (
     <section className="mx-20 ">
@@ -17,7 +11,7 @@ export default function Featured() {
         <section className="h-[600px]">
           <div className="relative bg-black pt-7 rounded h-[37.5rem]">
             <div className="flex w-full h-full items-end justify-center">
-              <Image src={playstation} alt="PlayStation 5" />
+              <img src={"/playstation.png"} alt="PlayStation 5" />
             </div>
             <div className="text-white absolute bottom-0 m-8 w-60">
               <h3 className="font-semibold text-2xl mb-4">PlayStation 5</h3>
@@ -32,7 +26,7 @@ export default function Featured() {
         <section>
           <div className="relative bg-black mb-8 rounded h-[17.75rem]">
             <div className="flex w-full h-full items-center justify-end">
-              <Image src={women} alt="Women’s Collections" />
+              <img src={"/women.png"} alt="Women’s Collections" />
             </div>
             <div className="text-white absolute bottom-0 m-8 w-64">
               <h3 className="font-semibold text-2xl mb-4">
@@ -48,7 +42,7 @@ export default function Featured() {
           <div className="grid lg:grid-cols-2 gap-8 rounded">
             <div className="relative bg-[#3a3838] mb-8 h-[17.75rem]">
               <div className="flex w-full h-full items-center justify-center">
-                <Image src={speakers} alt="Speakers" />
+                <img src={"/speakers.png"} alt="Speakers" />
               </div>
               <div className="text-white absolute bottom-0 m-8">
                 <h3 className="font-semibold text-2xl mb-4">Speakers</h3>
@@ -58,7 +52,7 @@ export default function Featured() {
             </div>
             <div className="relative bg-[#3a3838] mb-8 rounded h-[17.75rem]">
               <div className="flex w-full h-full items-center justify-center">
-                <Image src={perfume} alt="Perfume" />
+                <img src={"/perfume.png"} alt="Perfume" />
               </div>
               <div className="text-white absolute bottom-0 m-8">
                 <h3 className="font-semibold text-2xl mb-4">Perfume</h3>

@@ -1,5 +1,4 @@
 import { Product } from "@/types/interface";
-import Image from "next/image";
 import Link from "next/link";
 
 interface ProductCardProps {
@@ -15,7 +14,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             {product.discount}
           </p>
           <div className="flex items-center justify-center h-full w-full">
-            <Image src={product.image} alt={product.name} />
+            <img src={product.image} alt={product.name} />
           </div>
         </div>
         <div className="pt-3 text-left">

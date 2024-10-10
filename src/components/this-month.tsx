@@ -1,9 +1,5 @@
 import { Product } from "@/types/interface";
 import ProductCard from "./product-card";
-import jacket from "../../public/jacket.png";
-import purse from "../../public/purse.png";
-import cooler from "../../public/cooler.png";
-import shelf from "../../public/shelf.png";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
 
@@ -11,7 +7,7 @@ export default function ThisMonth() {
   const products: Product[] = [
     {
       discount: "30%",
-      image: jacket,
+      image: "/jacket.png",
       name: "The north coat",
       discountedPrice: "$260",
       withoutDiscount: "$360",
@@ -20,7 +16,7 @@ export default function ThisMonth() {
     },
     {
       discount: "30%",
-      image: purse,
+      image: "/purse.png",
       name: "Gucci duffle bag",
       discountedPrice: "$960",
       withoutDiscount: "$1160",
@@ -35,7 +31,7 @@ export default function ThisMonth() {
     },
     {
       discount: "30%",
-      image: cooler,
+      image: "/cooler.png",
       name: "RGB liquid CPU Cooler",
       discountedPrice: "$160",
       withoutDiscount: "$170",
@@ -50,7 +46,7 @@ export default function ThisMonth() {
     },
     {
       discount: "30%",
-      image: shelf,
+      image: "/shelf.png",
       name: "Small BookSelf",
       discountedPrice: "$360",
       withoutDiscount: "$370",
