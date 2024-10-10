@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { CiSearch } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 

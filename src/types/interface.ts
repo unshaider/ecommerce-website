@@ -1,7 +1,6 @@
-
 export interface Product {
   discount: string;
-  image: any;
+  image: unknown;
   name: string;
   discountedPrice: string;
   withoutDiscount: string;
