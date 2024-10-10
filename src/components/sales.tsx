@@ -54,37 +54,46 @@ export default function Sales() {
   ];
 
   return (
-    <section className="mt-36">
-      <div className="pl-20 flex gap-4 items-center">
-        <div className="bg-red-500 w-5 h-10 rounded-md"></div>
-        <p className="text-red-500 font-semibold">Today’s</p>
-      </div>
-      <div className="pl-20 flex gap-[5.438rem]">
-        <h2 className="font-semibold text-4xl mt-6">Flash Sales</h2>
-        <div className="flex items-end gap-4">
+    <section className="mt-36 mx-20">
+      <div>
+        <div className="grid lg:grid-cols-4 md:grid-cols-3">
           <div>
-            <p className="text-xs">Days</p>
-            <h3 className="font-bold text-3xl">03</h3>
+            <div className="flex gap-4 items-center">
+            <div className="bg-red-500 w-5 h-10 rounded-md"></div>
+            <p className="text-red-500 font-semibold">Today’s</p>
+            </div>
+            <div className="flex gap-[5.438rem]">
+              <div>
+                <h2 className="font-semibold text-4xl mt-6">Flash Sales</h2>
+              </div>
+            </div>
           </div>
-          <p className="text-red-500 font-bold text-2xl">:</p>
-          <div>
-            <p className="text-xs">Hours</p>
-            <h3 className="font-bold text-3xl">23</h3>
-          </div>
-          <p className="text-red-500 font-bold text-2xl">:</p>
-          <div>
-            <p className="text-xs">Minutes</p>
-            <h3 className="font-bold text-3xl">19</h3>
-          </div>
-          <p className="text-red-500 font-bold text-2xl">:</p>
-          <div>
-            <p className="text-xs">Seconds</p>
-            <h3 className="font-bold text-3xl">56</h3>
+
+          <div className="flex items-end gap-4 mt-5">
+            <div>
+              <p className="text-xs">Days</p>
+              <h3 className="font-bold text-3xl">03</h3>
+            </div>
+            <p className="text-red-500 font-bold text-2xl">:</p>
+            <div>
+              <p className="text-xs">Hours</p>
+              <h3 className="font-bold text-3xl">23</h3>
+            </div>
+            <p className="text-red-500 font-bold text-2xl">:</p>
+            <div>
+              <p className="text-xs">Minutes</p>
+              <h3 className="font-bold text-3xl">19</h3>
+            </div>
+            <p className="text-red-500 font-bold text-2xl">:</p>
+            <div>
+              <p className="text-xs">Seconds</p>
+              <h3 className="font-bold text-3xl">56</h3>
+            </div>
           </div>
         </div>
       </div>
-      
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-7 mx-20">
+
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-7">
         {products.map((product) => (
           <ProductCard key={product.name} product={product} />
         ))}

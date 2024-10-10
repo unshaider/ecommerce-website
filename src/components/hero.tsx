@@ -15,7 +15,7 @@ const Hero = () => {
         </h1>
         <p className="text-[#fafafa] text-base mt-9 font-medium">Shop Now</p>
       </div>
-      <Image src={iphone} alt="iphone" width={320} height={250} className="mx-20 my-14" />
+      <Image src={iphone} alt="iphone" className="max-w-80 mx-20 my-14" />
     </section>
   );
 };
