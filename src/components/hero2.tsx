@@ -30,7 +30,7 @@ export default function Hero2() {
         </div>
         <button className="bg-green-500 hover:bg-red-400 px-12 py-4 rounded">Buy Now!</button>
       </div>
-        <Image src={speaker} alt="speaker" height={330} width={568} className="mt-10" />
+        <Image src={speaker} alt="speaker" height={330} width={568} className="mt-10 object-cover" />
     </section>
   );
 }

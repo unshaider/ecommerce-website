@@ -13,7 +13,7 @@ export default function Featured() {
         <section className="h-[600px]">
           <div className="relative bg-black pt-7 rounded h-[37.5rem]">
             <div className="flex w-full h-full items-end justify-center">
-              <Image src={"/playstation.png"} alt="PlayStation 5" height={511} width={511}  />
+              <Image src={"/playstation.png"} alt="PlayStation 5" height={511} width={511} className="object-cover"  />
             </div>
             <div className="text-white absolute bottom-0 m-8 w-60">
               <h3 className="font-semibold text-2xl mb-4">PlayStation 5</h3>
@@ -28,7 +28,7 @@ export default function Featured() {
         <section>
           <div className="relative bg-black mb-8 rounded h-[17.75rem]">
             <div className="flex w-full h-full items-center justify-end">
-              <Image src={"/women.png"} alt="Women’s Collections" height={286} width={432} />
+              <Image src={"/women.png"} alt="Women’s Collections" height={286} width={432} className="object-cover" />
             </div>
             <div className="text-white absolute bottom-0 m-8 w-64">
               <h3 className="font-semibold text-2xl mb-4">
@@ -44,7 +44,7 @@ export default function Featured() {
           <div className="grid lg:grid-cols-2 gap-8 rounded">
             <div className="relative bg-[#3a3838] mb-8 h-[17.75rem]">
               <div className="flex w-full h-full items-center justify-center">
-                <Image src={"/speakers.png"} alt="Speakers" height={221} width={190} />
+                <Image src={"/speakers.png"} alt="Speakers" height={221} width={190} className="object-cover" />
               </div>
               <div className="text-white absolute bottom-0 m-8">
                 <h3 className="font-semibold text-2xl mb-4">Speakers</h3>
@@ -54,7 +54,7 @@ export default function Featured() {
             </div>
             <div className="relative bg-[#3a3838] mb-8 rounded h-[17.75rem]">
               <div className="flex w-full h-full items-center justify-center">
-                <Image src={"/perfume.png"} alt="Perfume" height={203} width={201} />
+                <Image src={"/perfume.png"} alt="Perfume" height={203} width={201} className="object-cover" />
               </div>
               <div className="text-white absolute bottom-0 m-8">
                 <h3 className="font-semibold text-2xl mb-4">Perfume</h3>

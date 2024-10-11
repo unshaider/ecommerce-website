@@ -15,7 +15,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             {product.discount}
           </p>
           <div className="flex items-center justify-center h-full w-full">
-            <Image src={product.image} alt={product.name} height={180} width={180} />
+            <Image src={product.image} alt={product.name} height={180} width={180} className="object-cover m-20" />
           </div>
         </div>
         <div className="pt-3 text-left">
