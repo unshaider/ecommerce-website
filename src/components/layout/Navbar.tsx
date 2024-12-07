@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
+import { HiMagnifyingGlass } from "react-icons/hi2";
+import { Input } from "../ui/input";
 
 
 const Navbar = () => {
@@ -36,7 +38,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link
-            href={""}
+            href={"/signup"}
             className="hover:underline decoration-gray-800 decoration-2 underline-offset-8"
           >
             Sign Up
@@ -44,10 +46,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="flex gap-6 items-center">
-        <input
-          type="text"
-          placeholder="What are you looking for?"
-          className="bg-[#f5f5f5] pl-5 pr-12 py-[0.438rem] rounded-[0.25rem] text-sm" />
+          <Input type="text" placeholder="What are you looking for?" className="bg-[#f5f5f5] pl-5 pr-12 py-[0.438rem] rounded-[0.25rem] text-sm" />
           <CiHeart className="text-3xl" />
           <CiShoppingCart className="text-3xl" />
       </div>

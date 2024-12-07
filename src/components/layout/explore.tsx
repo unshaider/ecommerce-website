@@ -1,10 +1,18 @@
-import { Product } from "@/types/interface";
 import ProductCard from "./product-card";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
 import Button from "./button";
 
 export default function Explore() {
+  interface Product {
+    discount: string;
+    image: string;
+    name: string;
+    discountedPrice: string;
+    withoutDiscount: string;
+    stars: JSX.Element[];
+    rating: string;
+  }
   const products: Product[] = [
     {
       discount: "30%",

@@ -1,9 +1,17 @@
 import ProductCard from "./product-card";
-import { Product } from "../types/interface";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
 
 export default function Sales() {
+  interface Product {
+    discount: string;
+    image: string;
+    name: string;
+    discountedPrice: string;
+    withoutDiscount: string;
+    stars: JSX.Element[];
+    rating: string;
+  }
   const products: Product[] = [
     {
       discount: "-40%",

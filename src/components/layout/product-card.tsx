@@ -1,9 +1,17 @@
-import { Product } from "@/types/interface";
+
 import Link from "next/link";
 import Image from "next/image";
 
 interface ProductCardProps {
-  product: Product;
+  product: {
+    discount: string;
+    image: string;
+    name: string;
+    discountedPrice: string;
+    withoutDiscount: string;
+    stars: JSX.Element[];
+    rating: string;
+  };
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {

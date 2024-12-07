@@ -1,5 +1,4 @@
 import Image from "next/image";
-import speaker from "../../public/speaker.png";
 
 export default function Hero2() {
   return (
@@ -30,7 +29,7 @@ export default function Hero2() {
         </div>
         <button className="bg-green-500 hover:bg-red-400 px-12 py-4 rounded">Buy Now!</button>
       </div>
-        <Image src={speaker} alt="speaker" height={330} width={568} className="mt-10 object-cover" />
+        <Image src={"/speaker.png"} alt="speaker" height={330} width={568} className="mt-10 drop-shadow-2xl " />
     </section>
   );
 }

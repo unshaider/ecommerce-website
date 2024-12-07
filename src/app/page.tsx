@@ -1,13 +1,13 @@
-import Aside from "@/components/aside";
-import Hero from "@/components/hero";
-import Sales from "@/components/sales";
-import Button from "@/components/button";
-import Categories from "@/components/categories";
-import ThisMonth from "@/components/this-month";
-import Hero2 from "@/components/hero2";
-import Explore from "@/components/explore";
-import Featured from "@/components/featured";
-import Last from "@/components/last";
+import Aside from "@/components/layout/aside";
+import Hero from "@/components/layout/hero";
+import Sales from "@/components/layout/sales";
+import Button from "@/components/layout/button";
+import Categories from "@/components/layout/categories";
+import ThisMonth from "@/components/layout/this-month";
+import Hero2 from "@/components/layout/hero2";
+import Explore from "@/components/layout/explore";
+import Featured from "@/components/layout/featured";
+import Last from "@/components/layout/last";
 
 const Home = () => {
   return (
